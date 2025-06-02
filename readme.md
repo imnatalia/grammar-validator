@@ -42,7 +42,7 @@ Certifique-se de que os seguintes arquivos estejam no mesmo diretório:
 
 Abra o terminal ou prompt de comando, navegue até o diretório onde estão os arquivos e execute:
 
-```bash
+
 python reconhecedor.py gramatica.txt
 
 
@@ -55,14 +55,5 @@ O arquivo `gramatica.txt` deve seguir rigorosamente as seguintes regras:
 - As produções devem seguir o formato estabelecido.
 
 ### Exemplo de entrada válida:
-
-```txt
-S>AB;A>a;B>b;$
-
-S, A, B    → não-terminais  
-a, b       → terminais  
->          → separa lado esquerdo e direito de uma produção  
-;          → separa diferentes produções  
-$          → indica o fim da definição gramatical
-
-
+```bash
+A>b;A>a;D>cBc;A>$
