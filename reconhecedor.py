@@ -1,0 +1,3 @@
+from grammar import generate_grammar_output
+
+generate_grammar_output()

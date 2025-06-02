@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0" version="26.2.14">
+  <diagram name="Página-1" id="0Chc7sUoB3wmIyAl3kVo">
+    <mxGraphModel dx="1489" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-2" value="&lt;div style=&quot;color: #bfc7d5;background-color: #292d3e;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #82aaff;&quot;&gt;readGrammarFile&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="90" width="230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3HZxGhKDt-Z0F9gn-p4F-2" source="3HZxGhKDt-Z0F9gn-p4F-5" target="3HZxGhKDt-Z0F9gn-p4F-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-5" value="lê o arquivo da gramática" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-2">
+          <mxGeometry x="55" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-7" value="&lt;div&gt;retorna um vetor com todas as linhas da gramática, onde cada linha deve ser uma especifica&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-2">
+          <mxGeometry x="42.5" y="130" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-3" value="&lt;div style=&quot;color: #bfc7d5;background-color: #292d3e;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #82aaff;&quot;&gt;checkGrammar&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="290" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-4" value="quero uma gramática" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-3">
+          <mxGeometry x="85" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="3HZxGhKDt-Z0F9gn-p4F-3" source="3HZxGhKDt-Z0F9gn-p4F-8" target="3HZxGhKDt-Z0F9gn-p4F-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-22" value="none" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3HZxGhKDt-Z0F9gn-p4F-13">
+          <mxGeometry x="0.698" y="1" relative="1" as="geometry">
+            <mxPoint x="14" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3HZxGhKDt-Z0F9gn-p4F-3" source="3HZxGhKDt-Z0F9gn-p4F-8" target="3HZxGhKDt-Z0F9gn-p4F-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-23" value="valor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3HZxGhKDt-Z0F9gn-p4F-14">
+          <mxGeometry x="0.0509" y="-3" relative="1" as="geometry">
+            <mxPoint x="19" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-8" value="verifica se a função teve retorno != None" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-3">
+          <mxGeometry x="85" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-11" value="retorna &quot;não há gramática&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-3">
+          <mxGeometry x="10" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3HZxGhKDt-Z0F9gn-p4F-3" source="3HZxGhKDt-Z0F9gn-p4F-12" target="3HZxGhKDt-Z0F9gn-p4F-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-24" value="não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3HZxGhKDt-Z0F9gn-p4F-18">
+          <mxGeometry x="-0.0549" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-12" value="verifica se é uma gramática válida" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-3">
+          <mxGeometry x="160" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-15" value="&quot;gramática invalida&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-3">
+          <mxGeometry x="40" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3HZxGhKDt-Z0F9gn-p4F-4" target="3HZxGhKDt-Z0F9gn-p4F-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3HZxGhKDt-Z0F9gn-p4F-7" target="3HZxGhKDt-Z0F9gn-p4F-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-16" value="&lt;div style=&quot;color: #bfc7d5;background-color: #292d3e;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #82aaff;&quot;&gt;generateGrammarOutput&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="620" width="290" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3HZxGhKDt-Z0F9gn-p4F-16" source="3HZxGhKDt-Z0F9gn-p4F-17" target="3HZxGhKDt-Z0F9gn-p4F-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-17" value="Criar output da forma correta" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-16">
+          <mxGeometry x="160" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-20" value="retorna mensagem de output" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3HZxGhKDt-Z0F9gn-p4F-16">
+          <mxGeometry x="85" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3HZxGhKDt-Z0F9gn-p4F-12" target="3HZxGhKDt-Z0F9gn-p4F-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3HZxGhKDt-Z0F9gn-p4F-25" value="sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3HZxGhKDt-Z0F9gn-p4F-19">
+          <mxGeometry x="-0.5844" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
