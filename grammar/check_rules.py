@@ -5,7 +5,7 @@ def check_rules(rules):
     isMatch = []
     
     for rule in rules:
-        noWhiteSpace = rule.strip().replace(" ", "")
+        noWhiteSpace = rule.replace(" ", "")
         isMatch = padraoRegra.match(noWhiteSpace)
         if not isMatch:
             return False

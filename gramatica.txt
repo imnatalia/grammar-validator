@@ -1,1 +1,1 @@
-A > b - A > a - D > cBc - A > $
+A > b ; A > a ; D > cBc ; A > $
