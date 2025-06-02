@@ -41,7 +41,7 @@ def check_grammar() -> GrammarComponents:
         validator(hasNonTerminals, msg)
 
         #pegar cada regra
-        rules = line.split('-')
+        rules = line.split(';')
         
         #regra 5 - ve se a regra esta bem formatada (apenas nao terminais gerando)
         if not check_rules(rules):
