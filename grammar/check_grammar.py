@@ -1,50 +1,51 @@
-#from grammar import GrammarComponents, read_grammar_file, terminal_symbols, non_terminal_symbols, check_rules
-from .file_reader import read_grammar_file
+from .file import read_grammar_file
 from .symbols import terminal_symbols, non_terminal_symbols
 from .check_rules import check_rules
 from .grammar_model import GrammarComponents
 
+#validador para verificar se ha simbolos
+def validator(condition, msg):
+    if condition == False:
+        print(msg)
+        return None
 
-def validator(condition):
-    if condition == None:
-        print("não há simbolos")
-#todo - se tiver mais de uma linha deve retornar erro
-#todo - retornar mensagens de erros especificos ex terminal nao pode gerar nao terminal
-#reconhecer gramatica, por funcao
 def check_grammar() -> GrammarComponents:
-    #pega o arquivo
-    raiz = ''
-    terminais = []
-    naoTerminais = []
+    startSymbol = ''
+    hasTerminals = []
+    hasNonTerminals = []
+    rules = []
     lines = read_grammar_file()
-    #regras = []
-    
-    #para cada linha
+    if len(lines) > 1:
+        print("A regra contem mais de uma linha! Por favor, indique apenas uma regra por vez")
+        return None
+
     for line in lines:
-        #regra 1 - a primeira parte da regra deve ser maiuscula, a qual sera a raiz
+        #regra 1 - o primeiro caracter deve ser maiusculo, o qual sera a raiz
         if line[0].isupper():
-            raiz = line[0]
+            startSymbol = line[0]
         else:
             print("Sua regra nao esta bem formatada, o primeiro caracter da sua regra deve ser uma letra maiuscula")
+            return None
 
-        #regra final com $
+        #regra 2 - o final da regra deve ter o caracter $
         if line[-1] != '$':
             print("Sua regra nao esta bem formatada, o ultimo caracter da sua regra deve ser $")
+            return None
         
-        #regra 2 - ter terminais
-        terminais = terminal_symbols(line)
-        validator(terminais)
+        #regra 3 - verifica se tem terminais
+        hasTerminals, msg = terminal_symbols(line)
+        validator(hasTerminals, msg)
 
-        #regra 3 - nao terminais
-        naoTerminais = non_terminal_symbols(line)
-        validator(naoTerminais)
+        #regra 4 - verifica se tem nao terminais
+        hasNonTerminals, msg = non_terminal_symbols(line)
+        validator(hasNonTerminals, msg)
 
-        #regras
-        #regras = line.split('-')
+        #pegar cada regra
+        rules = line.split('-')
         
-        #regra 4 - ver se a regra esta bem formatada
-        if not check_rules(line):
-            #regra certa
-            print("Sua regra nao esta bem formatada.")
-
-    return GrammarComponents(terminais, naoTerminais, line, raiz)
+        #regra 5 - ve se a regra esta bem formatada (apenas nao terminais gerando)
+        if not check_rules(rules):
+            print("Sua regra nao esta bem formatada, ela deve seguir o padrao <lado-esquerdo(letras maiusculas)> > <lado-direito(maiusculas e/ou minusculas)> - <lado-esquerdo> > $.")
+            return None
+        
+    return GrammarComponents(hasTerminals, hasNonTerminals, rules, startSymbol)

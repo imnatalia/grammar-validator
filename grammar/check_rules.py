@@ -1,14 +1,13 @@
 import re
 
-#todo - verificacao para caracteres invalidos no meio da regra
-#todo - verificacao de terminal gerando algo
 def check_rules(rules):
-    padraoRegra = re.compile(r'^([A-Z])>(.*)$')
+    padraoRegra = re.compile(r'^([A-Z])>([A-Za-z\$]+)$')
     isMatch = []
     
     for rule in rules:
-        noWhite = rule.replace(" ", "")
-        isMatch = padraoRegra.match(noWhite)
+        noWhiteSpace = rule.strip().replace(" ", "")
+        isMatch = padraoRegra.match(noWhiteSpace)
         if not isMatch:
             return False
+        
     return True
