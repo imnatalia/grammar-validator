@@ -1,8 +1,14 @@
 import sys
 
+def check_file_name(fileName):
+    if fileName != "gramatica.txt":
+        sys.exit("O arquivo deve ser obrigatoriamente gramatica.txt")
+
 def read_grammar_file():
     try:
-        with open('./gramatica.txt', 'r') as file:
+        fileName = sys.argv[1] #para selecionar especificamente o segundo argumento, que deve ser o arquivo
+        check_file_name(fileName)
+        with open(fileName, 'r') as file:
             lines = file.readlines()
             return check_file(lines)
     except FileNotFoundError:
